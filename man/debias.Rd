@@ -30,11 +30,11 @@ debias(Y, X, beta_hat, tau = 0.5, intercept = TRUE, c_h = 0.01,
     \item{beta_amend}{\emph{p} x 1 or (\emph{p}+1) x 1 numeric vector, debaised high dimensional quantile regression coefficients.}
 }
 \references{
-    Bradic, J. and Kolar, M. (2017), Uniform Inference for High-dimensional Quantile Regression: Linear Functionals and Regression Rank Scores. \emph{arXiv:1702.06209}.
+    Bradic, J. and Kolar, M. (2017), Uniform Inference for High-dimensional Quantile Regression: Linear Functionals and Regression Rank Scores, \emph{arXiv:1702.06209}.
     
-    Belloni, A., Chernozhukov, V. and Kato, K. (2013), Robust inference in high-dimensional approximately sparse quantile regression models. arXiv preprint arXiv:1312.7186,
+    Belloni, A., Chernozhukov, V. and Kato, K. (2013), Robust inference in high-dimensional approximately sparse quantile regression models, \emph{arXiv preprint arXiv:1312.7186}.
     
-    Cai, T., Liu, W. and Xia, Y. (2014), Two-sample test of high dimensional means under dependence. \emph{Journal of Royal Statistical Society, Series B}, \bold{76}, 34-372.
+    Cai, T., Liu, W. and Xia, Y. (2014), Two-sample test of high dimensional means under dependence, \emph{Journal of Royal Statistical Society, Series B}, \bold{76}, 34-372.
 }
 \seealso{
     \code{\link{qrfit}}

@@ -34,7 +34,7 @@ qrloft(Y, X, beta_in, tau = 0.5, intercept = TRUE, type = NULL,
 \references{
     Feng, X. D., He, X. M. and Hu, J. H. (2011), Wild bootstrap for quantile regression, \emph{Biometrika}, \bold{94}, 995-999.
     
-    Dong, C., Li, G. D. and Feng, X. D. (2019), Lack-of-fit tests for quantile regression models, \emph{Journal of Royal Statistical Society, Series B}, \bold{To appear}.
+    Dong, C., Li, G. D. and Feng, X. D. (2019), Lack-of-fit tests for quantile regression models, \emph{Journal of Royal Statistical Society, Series B}, \bold{to appear}.
 }
 \seealso{
     See \code{\link{qrfit}}, \code{\link{qicdalg}} for estimating quantile regression model.

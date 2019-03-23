@@ -36,7 +36,7 @@ qicdalg(Y, X, beta_in = NULL, tau = 0.5, lambda = NULL, intercept = TRUE,
 \references{
     Peng, B. and Wang, L. (2015), An Iterative Coordinate Descent Algorithm for High-Dimensional Nonconvex Penalized Quantile Regression; \emph{Journal of Computational and Graphical Statistics}, \bold{24}, 676-694.
     
-    Fan, J. and Lv, J. (2001), A Selective Overview of Variable Selection in High Dimensional Feature Space; \emph{Statistica Sinica}, \bold{20}, 101-148.
+    Fan, J. and Lv, J. (2001), A Selective Overview of Variable Selection in High Dimensional Feature Space, \emph{Statistica Sinica}, \bold{20}, 101-148.
     
     Zhang, C. H. (2010), Nearly Unbiased Variable Selection Under Minimax Concave Penalty, \emph{The Annals of Statistics}, \bold{38}, 894-942. 
     

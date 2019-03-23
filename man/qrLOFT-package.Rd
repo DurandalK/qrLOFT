@@ -6,7 +6,7 @@
   Lack of Fit Test for Multivariate and High Dimensional Quantile Regression Model
 }
 \description{
-    This package provides a fast way to implement the lack of fit test method for both multivariate and high dimensional quantile regression model. More details about the test method can be found in Dong, Li and Feng (2019).
+    This package provides a fast way to implement the lack of fit tests for both multivariate and high dimensional quantile regression models. More details about these test methods can be found in Dong, Li and Feng (2019).
 }
 \details{
     Package \code{qrLOFT} constains several functions for estimating and testing quantile regression models.
