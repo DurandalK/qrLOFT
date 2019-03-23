@@ -1,0 +1,13 @@
+Package: qrLOFT
+Type: Package
+Title: Lack of Fit Test for Multivariate and High Dimensional Quantile Regression Model
+Version: 1.0
+Date: 2019-03-24
+Author: Chen Dong, Guodong Li, and Xingdong Feng
+Maintainer: Chen Dong<dongchen39@hotmail.com>
+Description: Functions to implement estimation of penalized quantile regression model using QICD algorithm and perform lack of test for multivariate and high dimensional quantile regression model.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+URL: https://github.com/DurandalK/qrLOFT
+BugReports: http://github.com/DurandalK/qrLOFT/issues
