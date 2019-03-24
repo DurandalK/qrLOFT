@@ -22,6 +22,8 @@ qrmm(X, Y, tau)
 }
 \references{
     Hunter, D. R. and Lange, K. (2000), Quantile Regression via an MM Algorithm, \emph{Journal of Computational and Graphical Statistics}, \bold{9}, 60-77.
+    
+    Press, W. H., Teukolsky, S. A., Vetterling, W. T. and Flannery, B. P. (2007) \emph{Numerical Recipes: The Art of Scientific Computing, 3rd ed.}, Cambridge University Press, Cambridge.
 }
 \examples{
 data("Companies")

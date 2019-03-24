@@ -32,6 +32,12 @@ qrloft(Y, X, beta_in, tau = 0.5, intercept = TRUE, type = NULL,
     \item{p.value}{numeric value, p value for proposed test.}
 }
 \references{
+    Cai, T., Liu, W. and Xia, Y. (2013), Two-Sample Covariance Matrix Testing and Support Recovery in High-Dimensional and Sparse Settings, \emph{Journal of the American Statistical Association}, \bold{501}, 265-277.
+
+    Cai, T., Liu, W. and Xia, Y. (2014), Two-sample test of high dimensional means under dependence, \emph{Journal of Royal Statistical Society, Series B}, \bold{76}, 34-372.
+
+    Press, W. H., Teukolsky, S. A., Vetterling, W. T. and Flannery, B. P. (2007) \emph{Numerical Recipes: The Art of Scientific Computing, 3rd ed.}, Cambridge University Press, Cambridge.
+
     Feng, X. D., He, X. M. and Hu, J. H. (2011), Wild bootstrap for quantile regression, \emph{Biometrika}, \bold{94}, 995-999.
     
     Dong, C., Li, G. D. and Feng, X. D. (2019), Lack-of-fit tests for quantile regression models, \emph{Journal of Royal Statistical Society, Series B}, \bold{to appear}.

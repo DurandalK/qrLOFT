@@ -38,9 +38,11 @@ qicdalg(Y, X, beta_in = NULL, tau = 0.5, lambda = NULL, intercept = TRUE,
     
     Fan, J. and Lv, J. (2001), A Selective Overview of Variable Selection in High Dimensional Feature Space, \emph{Statistica Sinica}, \bold{20}, 101-148.
     
-    Zhang, C. H. (2010), Nearly Unbiased Variable Selection Under Minimax Concave Penalty, \emph{The Annals of Statistics}, \bold{38}, 894-942. 
+    Zhang, C. H. (2010), Nearly Unbiased Variable Selection Under Minimax Concave Penalty, \emph{The Annals of Statistics}, \bold{38}, 894-942.
     
     Belloni, A. and Chernozhukov V. (2011) L1-penalized Quantile Regression in High-dimensional Sparse Models; \emph{The Annals of Statistics}, \bold{39}, 82-130.
+    
+    Press, W. H., Teukolsky, S. A., Vetterling, W. T. and Flannery, B. P. (2007) \emph{Numerical Recipes: The Art of Scientific Computing, 3rd ed.}, Cambridge University Press, Cambridge.
 }
 \seealso{
     \code{\link{qrfit}}

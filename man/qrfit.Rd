@@ -37,6 +37,8 @@ qrfit(Y, X, beta_in = NULL, tau = 0.5, lambda = seq(0.005, 0.3, length.out = 200
     Peng, B. and Wang, L. (2015), An Iterative Coordinate Descent Algorithm for High-Dimensional Nonconvex Penalized Quantile Regression. \emph{Journal of Computational and Graphical Statistics}, \bold{24}, 676-694.
     
     Belloni, A. and Chernozhukov V. (2011) L1-penalized Quantile Regression in High-dimensional Sparse Models. \emph{The Annals of Statistics}, \bold{39}, 82-130.
+    
+    Press, W. H., Teukolsky, S. A., Vetterling, W. T. and Flannery, B. P. (2007) \emph{Numerical Recipes: The Art of Scientific Computing, 3rd ed.}, Cambridge University Press, Cambridge.
 }
 \seealso{
     \code{\link{qicdalg}}

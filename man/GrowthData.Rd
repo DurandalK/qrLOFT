@@ -27,7 +27,7 @@ The full data set and further details can be found at
     Barro, R. J. and Lee, J. W. (1994), Data set for a panel of 139
 countries. NBER.
 
-    Barro, R. J. and Sala-i-Martin, X. (1995), Economic Growth. McGrwa-Hill, New York.
+    Barro, R. J. and Sala-i-Martin, X. (1995), \emph{Economic Growth}, McGrwa-Hill, New York.
 }
 \note{
 This dataset is directly excerpted from package \code{hdm}, for more information please check the webpages listed below.
