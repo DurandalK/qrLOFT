@@ -16,15 +16,15 @@ qrloft(Y, X, beta_in, tau = 0.5, intercept = TRUE, type = NULL,
     \item{beta_in}{\emph{p} x 1 or (\emph{p}+1) x 1 numeric vector, quantile regression coefficients vector.}
     \item{tau}{numeric value, current quantile level, should lie in (0, 1) and the default value is 0.5.}
     \item{intercept}{logical value, intercept term indicator.}
-    \item{type}{character string, type of test, can be "Multi" or "HighDim". if doesn't specify, then this function will choose the test type using (\emph{n}, \emph{p}) accordingly.}
+    \item{type}{character string, type of test, can be "LowDim" or "HighDim". if doesn't specify, then this function will choose the test type using (\emph{n}, \emph{p}) accordingly.}
     \item{B}{integer, bootstrap test sample size.}
     \item{Cret}{logical value, indicator of finite sample correction used in bootstrap.}
     \item{...}{Further arguments to be passed to function \code{.QRlof}, more info can be found in details.}
 }
 \details{
     The \code{beta_in} can be estimated by other functions such as \code{\link{qrfit}}, \code{\link{qrmm}} and functions in other packages, such as \code{quantreg}, \code{cobs}.
-    Unless \code{type} is specified, the function will choose the test type based on the ratio of sample size \emph{n} and number of predctiors \emph{p}. If (\emph{n} / \emph{p} > 10) the function will perform a lack of fit test based on low dimensional quantile regression case, same as specifing \code{type} as "\code{Multi}", and perform a lack of fit test based on high dimensional quantile regression case if (\emph{n} / \emph{p} <= 10), same as specifing \code{type} as "\code{HighDim}".
-    In low dimensional test case, \code{qrloft} uses wild bootstrap method (Feng, He and Hu (2011)) to obtain the test p-value. Hence if \code{type = "Multi"}, one can specify the bootstrap sample size \code{B} and whether to perform a finte number correction setting parameter \code{Cret} to \code{FALSE} or \code{TRUE}. If neither is specified, \code{B = 500} and \code{Cret = FALSE} by default.
+    Unless \code{type} is specified, the function will choose the test type based on the ratio of sample size \emph{n} and number of predctiors \emph{p}. If (\emph{n} / \emph{p} > 10) the function will perform a lack of fit test based on low dimensional quantile regression case, same as specifing \code{type} as "\code{LowDim}", and perform a lack of fit test based on high dimensional quantile regression case if (\emph{n} / \emph{p} <= 10), same as specifing \code{type} as "\code{HighDim}".
+    In low dimensional test case, \code{qrloft} uses wild bootstrap method (Feng, He and Hu (2011)) to obtain the test p-value. Hence if \code{type = "LowDim"}, one can specify the bootstrap sample size \code{B} and whether to perform a finte number correction setting parameter \code{Cret} to \code{FALSE} or \code{TRUE}. If neither is specified, \code{B = 500} and \code{Cret = FALSE} by default.
     In high-dimensional case, \code{beta_in} should be specified in the first place, if not, the test procedure will automatically estimate the high dimensional quantile regression and further parameter can be passed to \code{qrfit} through \code{...}.
 }
 \value{

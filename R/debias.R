@@ -19,7 +19,9 @@ debias <- function(Y, X, beta_hat, tau = 0.5, intercept = TRUE, c_h = 0.01, delt
     #       delta, numeric,
     #           parameter in precision matrix estimation, c.f. Cai, Liu and Xia (2014);
     #       mat_thres, numeric,
-    #           mat_thres value used in precision matrix estimation.
+    #           mat_thres value used in precision matrix estimation,
+    #       ..., 
+    #           further arguments to be passed to qrfit().
     #
     # Output:
     #       beta_amend, (p x 1 or (p + 1) x 1) vector,

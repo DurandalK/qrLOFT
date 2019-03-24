@@ -28,7 +28,9 @@ qrfit <- function(Y, X, beta_in = NULL, tau = 0.5, lambda = seq(0.005, 0.3, leng
     #       bic_c, numeric,
     #           a constant in BIC criteria, c.f. Peng and Wang (2014);
     #       l1_c, numeric,
-    #           a constant in L1-penalty criteria, c.f. Chernozhukov et al. (2010).
+    #           a constant in L1-penalty criteria, c.f. Chernozhukov et al. (2010);
+    #       ...,
+    #           further arguments to be passed to qicdalg().
     #
     # Output:
     #       beta_hat, (p x 1 or (p + 1) x 1) vector,

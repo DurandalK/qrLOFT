@@ -16,10 +16,13 @@ qrloft <- function(Y, X, beta_in, tau = 0.5, intercept = TRUE, type = NULL, B = 
     #       intercept, logic,
     #           intercept term indicator;
     #       type, char,
-    #           test type indicator, can be "LowDim" or "HighDim".
+    #           test type indicator, can be "LowDim" or "HighDim";
+    #       B, int, 
+    #           bootstrap test sample size;
+    #       Cret, logic,
+    #           ndicator of finite sample correction used in bootstrap;
     #       ...
-    #           other parameter passed to QRlof, such as Bootstrap sample size, B,
-    #           correction indicator, Cret.
+    #           other parameter passed to qrfit()
     # Output:
     #       test.stat, numeric,
     #           proposed test statistic;
