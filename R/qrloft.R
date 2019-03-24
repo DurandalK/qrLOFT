@@ -16,7 +16,7 @@ qrloft <- function(Y, X, beta_in, tau = 0.5, intercept = TRUE, type = NULL, B = 
     #       intercept, logic,
     #           intercept term indicator;
     #       type, char,
-    #           test type indicator, can be "Multi" or "HighDim".
+    #           test type indicator, can be "LowDim" or "HighDim".
     #       ...
     #           other parameter passed to QRlof, such as Bootstrap sample size, B,
     #           correction indicator, Cret.
@@ -36,12 +36,12 @@ qrloft <- function(Y, X, beta_in, tau = 0.5, intercept = TRUE, type = NULL, B = 
     
     if(is.null(type)){
         if(n / p > 10)
-            type <- "Multi"
+            type <- "LowDim"
         else
             type <- "HighDim"
     }
     
-    if(type == "Multi"){
+    if(type == "LowDim"){
         output <- .QRlof(X, Y, tau, intercept, B, Cret)
         Mnhat <- output[1]
         pval <- output[2]

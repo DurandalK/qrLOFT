@@ -1,5 +1,5 @@
 # qrLOFT
-This package provides a fast way to implement the lack of fit tests for both multivariate and high dimensional quantile regression models. More details about these test methods can be found in Dong, Li and Feng (2019).
+This package provides a fast way to implement the lack of fit tests for both low and high dimensional quantile regression models. More details about these test methods can be found in Dong, Li and Feng (2019).
 
 # Installation
 ```

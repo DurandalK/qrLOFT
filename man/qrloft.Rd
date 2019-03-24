@@ -1,10 +1,10 @@
 \name{qrloft}
 \alias{qrloft}
 \title{
-    Lack of Fit Test for High-dimensional Quantile Regression
+    Lack of Fit Tests for Low and High Dimensional Quantile Regression
 }
 \description{
-    This function performs lack of fit test for either multivariate and high dimensional quantile regression.
+    This function performs lack of fit test for either low and high dimensional quantile regression.
 }
 \usage{
 qrloft(Y, X, beta_in, tau = 0.5, intercept = TRUE, type = NULL, 
@@ -23,8 +23,8 @@ qrloft(Y, X, beta_in, tau = 0.5, intercept = TRUE, type = NULL,
 }
 \details{
     The \code{beta_in} can be estimated by other functions such as \code{\link{qrfit}}, \code{\link{qrmm}} and functions in other packages, such as \code{quantreg}, \code{cobs}.
-    Unless \code{type} is specified, the function will choose the test type based on the ratio of sample size \emph{n} and number of predctiors \emph{p}. If (\emph{n} / \emph{p} > 10) the function will perform a lack of fit test based on multivariate quantile regression case, same as specifing \code{type} as "\code{Multi}", and perform a lack of fit test based on high dimensional quantile regression case if (\emph{n} / \emph{p} <= 10), same as specifing \code{type} as "\code{HighDim}".
-    In this multivariate test case, \code{qrloft} uses wild bootstrap method (Feng, He and Hu (2011)) to obtain the test p-value. Hence if \code{type = "Multi"}, one can specify the bootstrap sample size \code{B} and whether to perform a finte number correction setting parameter \code{Cret} to \code{FALSE} or \code{TRUE}. If neither is specified, \code{B = 500} and \code{Cret = FALSE} by default.
+    Unless \code{type} is specified, the function will choose the test type based on the ratio of sample size \emph{n} and number of predctiors \emph{p}. If (\emph{n} / \emph{p} > 10) the function will perform a lack of fit test based on low dimensional quantile regression case, same as specifing \code{type} as "\code{Multi}", and perform a lack of fit test based on high dimensional quantile regression case if (\emph{n} / \emph{p} <= 10), same as specifing \code{type} as "\code{HighDim}".
+    In low dimensional test case, \code{qrloft} uses wild bootstrap method (Feng, He and Hu (2011)) to obtain the test p-value. Hence if \code{type = "Multi"}, one can specify the bootstrap sample size \code{B} and whether to perform a finte number correction setting parameter \code{Cret} to \code{FALSE} or \code{TRUE}. If neither is specified, \code{B = 500} and \code{Cret = FALSE} by default.
     In high-dimensional case, \code{beta_in} should be specified in the first place, if not, the test procedure will automatically estimate the high dimensional quantile regression and further parameter can be passed to \code{qrfit} through \code{...}.
 }
 \value{
@@ -43,13 +43,13 @@ qrloft(Y, X, beta_in, tau = 0.5, intercept = TRUE, type = NULL,
     Dong, C., Li, G. D. and Feng, X. D. (2019), Lack-of-fit tests for quantile regression models, \emph{Journal of Royal Statistical Society, Series B}, \bold{to appear}.
 }
 \seealso{
-    See \code{\link{qrfit}}, \code{\link{qicdalg}} for estimating quantile regression model.
+    See \code{\link{qrmm}}, \code{\link{qrfit}} and \code{\link{qicdalg}} for estimating quantile regression model.
 }
 \examples{
 data("GrowthData")
 y <- GrowthData[, 1]
 x <- as.matrix(GrowthData[, 25 : 40])
-out <- qrfit(y, x, tau = 0.65, lambda = seq(0.01, 0.03, length.out = 100), criteria = 'BIC')
-t_out <- qrloft(y, x, out$beta_hat, tau = 0.65, type = "HighDim")
+out <- qrfit(y, x, tau = 0.75, lambda = seq(0.01, 0.03, length.out = 100), criteria = 'BIC')
+t_out <- qrloft(y, x, out$beta_hat, tau = 0.75, type = "HighDim")
 }
 \keyword{Lack of Fit Test}

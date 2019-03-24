@@ -1,7 +1,7 @@
 \name{qrmm}
 \alias{qrmm}
 \title{
-    Funciton to estimate quantile regression coefficients
+    MM-algorithm to estimate quantile regression coefficients
 }
 \description{
     Funciton to estimate quantile regression coefficients using MM-algorithm.
@@ -15,7 +15,7 @@ qrmm(X, Y, tau)
     \item{tau}{current quantile level, should lie in (0, 1).}
 }
 \details{
-    This function can only be used to estimate multivariate quantile regression, otherwise a singluar design matrix error might be returned.
+    This function can only be used to estimate low dimensional quantile regression, otherwise a singluar design matrix error might be returned.
 }
 \value{
     \item{beta_out}{quantile regression coefficients estimates.}

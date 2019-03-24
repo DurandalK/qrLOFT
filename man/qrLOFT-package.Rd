@@ -3,17 +3,17 @@
 \alias{qrLOFT}
 \docType{package}
 \title{
-  Lack of Fit Test for Multivariate and High Dimensional Quantile Regression Model
+  Lack of Fit Tests for Low and High Dimensional Quantile Regression Model
 }
 \description{
-    This package provides a fast way to implement the lack of fit tests for both multivariate and high dimensional quantile regression models. More details about these test methods can be found in Dong, Li and Feng (2019).
+    This package provides a fast way to implement the lack of fit tests for both low and high dimensional quantile regression models. More details about these test methods can be found in Dong, Li and Feng (2019).
 }
 \details{
     Package \code{qrLOFT} constains several functions for estimating and testing quantile regression models.
     \describe{
-    \item{qrmm}{MM-algorithm for estimating multivariate quantile regression.}
-    \item{qrfit}{QICD algorithm for estimating high-dimensional quantile regression.}
-    \item{qrloft}{Lack of fit test for multivariate or high dimensional quantile regression.}
+    \item{qrmm}{MM-algorithm for estimating low dimensional quantile regression.}
+    \item{qrfit}{QICD algorithm for estimating high dimensional quantile regression.}
+    \item{qrloft}{Lack of fit tests for low and high dimensional quantile regression.}
     }
 }
 \author{
